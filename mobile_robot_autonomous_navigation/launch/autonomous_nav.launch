@@ -33,7 +33,7 @@
   <include file="$(find mobile_robot_autonomous_navigation)/launch/amcl.launch" />
   <include file="$(find mobile_robot_autonomous_navigation)/launch/move_base.launch" /> 
   
-  <node name="imu_unit" pkg="mpu_6050_driver" type="imu_calibrated,py" >
+  <node name="imu_unit" pkg="mpu_6050_driver" type="imu_calibrated.py" >
   </node>
   <node name="imu_filter" pkg="imu_complementary_filter" type="complementary_filter_node" >
   </node>
